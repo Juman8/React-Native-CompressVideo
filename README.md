@@ -60,5 +60,5 @@ const onTrimVideo = async (startTime, endTime, source) => {
 // note: the name "proGress"is obligatory. you can edit it in class CompareVideo
 this.subscription = DeviceEventEmitter.addListener('proGress', value => {
     console.log('value', value)
-  })
+  })h
 
