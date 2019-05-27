@@ -23,13 +23,13 @@ Compare(uri) function
 ```sh
  Function Solution
  Compress video function
- on my project, I only need video about 3->5mb/15second.
+ on my project, I only need video about 3->5mb with video 15second.
  you can edit quality for video in function CompareVideo/Compare()
  bitrate hash code: ~ 2*1000*1000
 ```
 ```sh
 getThumbnailVideo(uri, perTime) function
- get asset thumbnail video
+ get asset thumbnail video with video 1.30p take about 5 second (with 1s/image)
  perTime -> seconds
  get a picture at time in Video, you can pass input with time is any in duration of video
 ```
