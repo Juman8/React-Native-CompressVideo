@@ -20,13 +20,13 @@ import { NativeModules, DeviceEventEmitter } from 'react-native'
 const { CompareVideo, TRIMVIDEO } = NativeModules
 
 Compare(uri) function
-`
+```sh
 // Function Solution
 // Compress video function
 // on my project, I only need video about 3->5mb/15second.
 // you can edit quality for video in function CompareVideo/Compare()
 // bitrate hash code: ~ 2*1000*1000
-`
+```
 `
 getThumbnailVideo(uri, perTime) function
 // get asset thumbnail video
