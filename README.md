@@ -8,6 +8,7 @@ Copy 2 pakage compassvideo + trimmer follow url: "android/app/src/main/java/com/
 And paste in your project.
 Don't forget change your pakage import on top.
 ## Continue
+```sh
 - in MainApplication.java
 + import your-pakage-name.compassvideo.ComparePackage;
 + in List<ReactPakage> getPackages
@@ -18,7 +19,7 @@ Don't forget change your pakage import on top.
 import { NativeModules, DeviceEventEmitter } from 'react-native'
 
 const { CompareVideo, TRIMVIDEO } = NativeModules
-
+```
 Compare(uri) function
 ```sh
  Function Solution
