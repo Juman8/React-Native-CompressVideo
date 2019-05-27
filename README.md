@@ -1,12 +1,13 @@
 # React-Native-CompressVideo
 This is a native module use for compress and trimmer video for android solution.
 
-Use:
+## 1 Use:
 
-First step:
+## 2 First step:
 Copy 2 pakage compassvideo + trimmer follow url: "android/app/src/main/java/com/apptest/"
 And paste in your project.
 Don't forget change your pakage import on top.
+## 2 Continue
 - in MainApplication.java
 + import your-pakage-name.compassvideo.ComparePackage;
 + in List<ReactPakage> getPackages
