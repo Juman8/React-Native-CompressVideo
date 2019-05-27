@@ -21,29 +21,29 @@ const { CompareVideo, TRIMVIDEO } = NativeModules
 
 Compare(uri) function
 ```sh
-// Function Solution
-// Compress video function
-// on my project, I only need video about 3->5mb/15second.
-// you can edit quality for video in function CompareVideo/Compare()
-// bitrate hash code: ~ 2*1000*1000
+ Function Solution
+ Compress video function
+ on my project, I only need video about 3->5mb/15second.
+ you can edit quality for video in function CompareVideo/Compare()
+ bitrate hash code: ~ 2*1000*1000
 ```
 ```sh
 getThumbnailVideo(uri, perTime) function
-// get asset thumbnail video
-// perTime -> seconds
-// get a picture at time in Video, you can pass input with time is any in duration of video
+ get asset thumbnail video
+ perTime -> seconds
+ get a picture at time in Video, you can pass input with time is any in duration of video
 ```
 ```sh
 getDurationCallBack(source) function
-// Get Duration video
+ Get Duration video
 ```
 ```sh
 trimVideo(source, startTime, endTime) fucntion
-// TRIM VIDEO
+ TRIM VIDEO
 ```
 ```sh
-// in Trim video you can get progress with solution event DeviceEventEmitter in React Native
-// note: the name "proGress"is obligatory. you can edit it in class CompareVideo
+ in Trim video you can get progress with solution event DeviceEventEmitter in React Native
+ note: the name "proGress"is obligatory. you can edit it in class CompareVideo
 this.subscription = DeviceEventEmitter.addListener('proGress', value => {
     console.log('value', value)
   })h
