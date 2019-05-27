@@ -42,11 +42,12 @@ trimVideo(source, startTime, endTime) fucntion
  TRIM VIDEO
 ```
 ```sh
- in Trim video you can get progress with solution event DeviceEventEmitter in React Native
- note: the name "proGress"is obligatory. you can edit it in class CompareVideo
+In Trim video you can get progress with solution event DeviceEventEmitter in React Native
+Note: the name "proGress"is obligatory. you can edit it in class CompareVideo
+
 this.subscription = DeviceEventEmitter.addListener('proGress', value => {
     console.log('value', value)
   })h
 ```
 
-More than in example/index.js
+**More than in example/index.js**
