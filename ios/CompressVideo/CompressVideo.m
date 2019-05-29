@@ -22,11 +22,8 @@ RCT_REMAP_METHOD(findEvents,
                  findEventsWithResolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-  int a = 10;
-  if(a==10){
   NSString *events = name;
   resolve(events);
-  }
 }
 
 RCT_REMAP_METHOD(getDuration,
@@ -43,8 +40,7 @@ RCT_REMAP_METHOD(getDuration,
   
   MediaInformation *mediaInformation = [MobileFFmpeg getMediaInformation:path];
 //   NSLog(@"Command execution cancelled by user.\n" + mediaInformation.getFormat);
-  int a = 10;
-  if(a==10){
+  if(mediaInformation.getDuration){
   resolve(mediaInformation.getDuration);
   }else{
     NSString *events = @"505";
@@ -67,8 +63,9 @@ RCT_REMAP_METHOD(comPressVideo,
                                  AVVideoMaxKeyFrameIntervalKey:@("1234")}};
   
   AVAssetWriterInput* writer_input = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo outputSettings:settings];
-  int a = 10;
-  if(a==10){
+  // check in put
+  MediaInformation *mediaInformation = [MobileFFmpeg getMediaInformation:writer_input];
+  if(mediaInformation.getDuration){
     resolve(writer_input);
   }else{
     NSString *events = @"504";
@@ -83,8 +80,7 @@ RCT_REMAP_METHOD(getBitrate,
 {
   MediaInformation *mediaInformation = [MobileFFmpeg getMediaInformation:videoPath];
   //   NSLog(@"Command execution cancelled by user.\n" + mediaInformation.getFormat);
-  int a = 10;
-  if(a==10){
+  if(mediaInformation.getBitrate){
     resolve(mediaInformation.getBitrate);
   }else{
     NSString *events = @"505";
