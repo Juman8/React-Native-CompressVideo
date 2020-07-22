@@ -8,8 +8,8 @@ Copy 2 pakage compassvideo + trimmer follow url: "android/app/src/main/java/com/
 And paste in your project.
 Don't forget change your pakage import on top.
 ## Continue
+MainApplication.java
 ```sh
-- in MainApplication.java
 + import your-pakage-name.compassvideo.ComparePackage;
 + in List<ReactPakage> getPackages
   add more new ComparePackage().
