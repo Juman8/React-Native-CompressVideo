@@ -34,7 +34,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.HashMap;
 
-import static com.beetsoft.Capitri.compassvideo.VideoEdit.shouldUseURI;
+import VideoEdit.shouldUseURI;
 
 
 public class CompareVideo extends ReactContextBaseJavaModule {
